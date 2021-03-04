@@ -6,7 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
         Autoshop autoshop = new Autoshop();
-        new Thread(null, autoshop::addCar, " ").start();
+        Producer producer = new Producer(autoshop);
+        new Thread(null, producer, " ").start();
         for (int i = 1; i <= MAX_AUTOS; i++) {
             new Thread(null, autoshop::buyCar, "Покупатель " + i).start();
             try {

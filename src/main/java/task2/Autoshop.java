@@ -37,8 +37,8 @@ public class Autoshop {
 
 
     protected void addCar() {
-        Producer producer = new Producer(this);
-        producer.start();
+        /*Producer producer = new Producer(this);
+        producer.start();*/
     }
 
     protected synchronized void notifier() {

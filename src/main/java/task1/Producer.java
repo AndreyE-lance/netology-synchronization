@@ -1,7 +1,7 @@
 package task1;
 
 public class Producer extends Thread {
-    private static final long DELAY = (long) (Math.random() * 4500);
+    private static final long DELAY = (long) (Math.random() * 5000);
     private Autoshop shop;
 
     public Producer(Autoshop shop) {
